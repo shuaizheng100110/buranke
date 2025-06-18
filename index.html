@@ -1,12 +1,19 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
-    <meta charset="UTF-8" />
-    <title>ChatGPT Web</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ChatGPT 聊天演示</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>欢迎使用 ChatGPT 网页版</h1>
-    <p>这是一个演示页面。</p>
+  <div class="chat-container">
+    <div id="chat-window" class="chat-window"></div>
+    <div class="input-box">
+      <input type="text" id="user-input" placeholder="请输入内容..." />
+      <button onclick="sendMessage()">发送</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
